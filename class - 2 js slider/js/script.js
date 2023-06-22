@@ -2,11 +2,16 @@ var slider_img = document.querySelector("#slider-img");
 var time = document.querySelector("#time");
 var current_img_index = 0;
 var images = [
-   "images/1.jpg",
-   "images/2.jpg",
-   "images/3.jpg",
-   "images/4.jpg",
-   "images/5.jpg"
+   "images/001.jpg",
+   "images/002.jpg",
+   "images/003.jpg",
+   "images/004.png",
+   "images/005.jpg",
+   "images/006.png",
+   "images/007.png",
+   "images/008.jpg",
+   "images/0010.png",
+   "images/0011.jpg",
 ];
 slider_img.src = images[current_img_index];
 
@@ -36,7 +41,7 @@ function next(){
   }, 1000);
 }
 
-setInterval(next, 6000);
+setInterval(next, 4000);
 setInterval(function() {
    time.innerHTML = (new Date()).toString();
 }, 1000);
